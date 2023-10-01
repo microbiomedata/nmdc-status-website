@@ -24,7 +24,7 @@ font-family: Arimo,sans-serif
 
 ### Color palette
 
-The color schema was chosen in an attempt to match the [NMDC website](https://microbiomedata.org/).
+The color scheme was chosen in an attempt to match the [NMDC website](https://microbiomedata.org/).
 
 ```css
 :root {
