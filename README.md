@@ -45,7 +45,7 @@ The color scheme was chosen in an attempt to match the [NMDC website](https://mi
 
 In `./index.css`, these colors are defined using CSS [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
 
-## Search engine performance
+## Search engine behavior
 
 The `./robots.txt` file contains the following, which tells all robots (e.g. web crawlers) we **don't** want them to visit any pages of the website. It's up to them to respect that, though.
 
@@ -58,9 +58,9 @@ Reference: [robotstxt.org](https://www.robotstxt.org/robotstxt.html)
 
 ## Text
 
-The website's text is written in **Markdown** format. I chose to implementing things that way in an attempt to make it easier for non-developers to update the text.
+The website's text is written in **Markdown** format. I implemented things that way in an attempt to make it easier for team members who are familiar with Markdown—but not with HTML—to update the website.
 
-The website uses a JavaScript library named [Showdown](https://github.com/showdownjs/showdown) to convert that Markdown into HTML. The conversion process begins when the web browser loads the web page.
+The website uses a JavaScript library named [Showdown](https://github.com/showdownjs/showdown) to convert that Markdown into HTML. The conversion process happens when the web browser loads the web page.
 
 ## Google Analytics
 
