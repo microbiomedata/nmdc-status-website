@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,500,700);
+
+/* CSS variables */
+:root {
+  --nmdc-white: #ffffff;
+  --nmdc-black: #000000;
+  --nmdc-blue: #02aae7;
+  --nmdc-orange: #ee5338;
+  --nmdc-purple: #4f3b80;
+  --nmdc-light-gray: #f5f5f5;
+  --nmdc-light-blue: #f3f9fe;
+}
+
+/* Font and page background */
+.nmdc-body {
+  font-family: "Arimo", sans-serif;
+  background-color: var(--nmdc-blue);
+  background-image: url("./img/hero.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom colors */
+.nmdc-white {
+  color: var(--nmdc-white);
+}
+.nmdc-black {
+  color: var(--nmdc-black);
+}
+.nmdc-blue {
+  color: var(--nmdc-blue);
+}
+.nmdc-orange {
+  color: var(--nmdc-orange);
+}
+.nmdc-purple {
+  color: var(--nmdc-purple);
+}
+.nmdc-light-gray {
+  color: var(--nmdc-light-gray);
+}
+.nmdc-light-blue {
+  color: var(--nmdc-light-blue);
+}
+
+/* Custom background colors */
+.nmdc-light-gray-bg {
+  background-color: var(--nmdc-light-gray);
+}
+.nmdc-light-blue-bg {
+  background-color: var(--nmdc-light-blue);
+}
+
+/* Logo */
+.nmdc-logo {
+  height: 55px;
+  width: 163.656;
+}
+.nmdc-logo-mark {
+  height: 55px;
+  margin-right: 10px;
+}
+.nmdc-logo-text {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Navbar */
+.nmdc-navbar {
+  background-color: var(--nmdc-light-gray);
+}
+
+/* Message */
+#nmdc-message p {
+  color: var(--nmdc-black);
+}
+#nmdc-message a {
+  color: var(--nmdc-blue);
+  text-decoration: none;
+}
+#nmdc-message a:hover {
+  text-decoration: underline;
+}
+#nmdc-message p:last-child {
+  margin-bottom: 0px;
+}
