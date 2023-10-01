@@ -1,0 +1,5 @@
+The presence of this file tells GitHub Pages that this website is not a Jekyll website.
+
+Note: When GitHub Pages sees a `.nojekyll` file in the root folder of the repo,
+      it refrains from performing the Jekyll build step before deploying the website.
+      Reference: https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/

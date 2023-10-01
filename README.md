@@ -7,6 +7,11 @@ This repository contains static web page(s) the NMDC team uses to display messag
 ### Updating the text
 
 Write the text in Markdown format in the file `./message.md`, then reload the web page (i.e. `index.html`).
+
+### Deployment
+
+GitHub will automatically deploy the latest commit on the `main` branch, to GitHub Pages.
+
 ## Design
 
 The website is built upon the [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/) web UI framework.
