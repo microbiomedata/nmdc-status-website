@@ -37,7 +37,7 @@
     <!-- Message -->
     <div class="container-fluid p-5">
         <h1 class="nmdc-white text-center fw-bold nmdc-light-gray">We'll be right back.</h1>
-        <div class="border border-white rounded mt-5 m-1 m-sm-5 p-4 nmdc-light-gray-bg shadow-sm nmdc-">
+        <div class="border border-white rounded mt-5 m-1 m-sm-5 p-4 nmdc-light-gray-bg shadow-sm">
             <span id="nmdc-message">
                 <div class="spinner-border text-light" role="status">
                     <span class="sr-only">Loading...</span>
@@ -64,9 +64,9 @@
 
             fetch("./message.md").then(function (response) {
                 return response.text();
-            }).then(function (text) {
+            }).then(function (markdownStr) {
                 var converter = new showdown.Converter();
-                var htmlStr = converter.makeHtml(text);
+                var htmlStr = converter.makeHtml(markdownStr);
                 targetEl.innerHTML = htmlStr;
             }).catch(function (error) {
                 targetEl.innerHTML = "<p>Failed to load message.</p>";
