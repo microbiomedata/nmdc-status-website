@@ -62,7 +62,7 @@
         addEventListener("DOMContentLoaded", function () {
             var targetEl = document.getElementById("nmdc-message");
 
-            fetch("/message.md").then(function (response) {
+            fetch("./message.md").then(function (response) {
                 return response.text();
             }).then(function (text) {
                 var converter = new showdown.Converter();
