@@ -1,3 +1,3 @@
-The infrastructure that powers this NMDC service is currently underdoing some scheduled maintenance. As a result, this NMDC service will be offline until **October 5, 2023 at 12:00pm PT**.
+The infrastructure that powers this NMDC service is currently undergoing some scheduled maintenance. As a result, this NMDC service will be offline until **October 5, 2023 at 12:00pm PT**.
 
 In case you want to explore NMDC metadata between now and then, you can visit a temporary [snapshot](https://data-microbiomedata.emsl.pnnl.gov/) of the data portal. Alternatively, you can visit our [website](https://microbiomedata.org/) to learn more about the NMDC.
