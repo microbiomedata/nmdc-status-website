@@ -39,7 +39,7 @@ The color scheme was chosen in an attempt to match the [NMDC website](https://mi
   --nmdc-orange: #ee5338;
   --nmdc-purple: #4f3b80;
   --nmdc-light-gray: #f5f5f5;
-  --nmdc-light-blue: #f3f9fe;
+  --nmdc-light-blue: #edf9fd;
 }
 ```
 
