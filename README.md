@@ -1,6 +1,8 @@
-# nmdc-outage-website
+# nmdc-status-website
 
 This repository contains static web page(s) the NMDC team uses to display messages during outages and other special events.
+
+It is hosted at: https://status.microbiomedata.org/
 
 ## Usage
 
