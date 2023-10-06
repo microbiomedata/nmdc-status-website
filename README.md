@@ -8,7 +8,9 @@ It is hosted at: https://status.microbiomedata.org/
 
 ### Updating the text
 
-Write the text in Markdown format in the file `./message.md`, then reload the web page (i.e. `index.html`).
+Write the text in Markdown format in the file `./message.md`, then reload the web page (i.e. `index.html`). The reloaded web page will show the message in a box below the words, "We'll be right back."
+
+If the `./message.md` file is empty, the web page will show a default message saying all systems are running normally.
 
 ### Deployment
 

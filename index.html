@@ -40,7 +40,7 @@
 
     <!-- Message -->
     <div class="container-fluid p-5">
-        <h1 class="nmdc-white text-center fw-bold">We'll be right back.</h1>
+        <h1 class="nmdc-white text-center fw-bold" id="nmdc-message-header">We'll be right back.</h1>
         <div class="border border-white rounded mt-5 m-1 m-sm-5 p-4 nmdc-white-bg shadow-sm">
             <span id="nmdc-message">
                 <div class="spinner-border text-light" role="status">
@@ -64,16 +64,30 @@
         // When the DOM is ready, load the Markdown string, convert it into HTML,
         // and render the HTML.
         addEventListener("DOMContentLoaded", function () {
-            var targetEl = document.getElementById("nmdc-message");
+            var messageHeaderEl = document.getElementById("nmdc-message-header");
+            var messageEl = document.getElementById("nmdc-message");
 
             fetch("./message.md").then(function (response) {
-                return response.text();
+                // Check whether the response code is 2xx.
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw Error("Failed to load status message.");
+                }
             }).then(function (markdownStr) {
-                var converter = new showdown.Converter();
-                var htmlStr = converter.makeHtml(markdownStr);
-                targetEl.innerHTML = htmlStr;
+                // Check whether the message is non-empty.
+                if (markdownStr.trim().length > 0) {
+                    var converter = new showdown.Converter();
+                    var htmlStr = converter.makeHtml(markdownStr);
+                    messageHeaderEl.innerHTML = "We'll be right back.";
+                    messageEl.innerHTML = htmlStr;
+                } else {
+                    messageHeaderEl.innerHTML = "System status";
+                    messageEl.innerHTML = "All systems are running normally.";
+                }
             }).catch(function (error) {
-                targetEl.innerHTML = "<p>Failed to load message.</p>";
+                messageHeaderEl.innerHTML = "An error has occurred";
+                messageEl.innerHTML = error.message;
             });
         });
     </script>
