@@ -75,6 +75,33 @@
 }
 
 /* Message */
+#nmdc-message h1 {
+  font-size: 23px;
+  line-height: 27.6px;
+}
+#nmdc-message h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+#nmdc-message h3 {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+#nmdc-message h4 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--bs-gray-700);
+}
+#nmdc-message h5 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--bs-gray-600);
+}
+#nmdc-message h6 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--bs-gray-500);
+}
 #nmdc-message p {
   color: var(--nmdc-black);
 }
