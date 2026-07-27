@@ -14,18 +14,20 @@ If the `./message.md` file is empty, the web page will show a default message sa
 
 ### Previewing the web page
 
-You can preview the web page locally by running the following command (which will start up a web
-server that reloads the page whenever the web page's source files change) and visiting [http://localhost:8000](http://localhost:8000).
+You can preview the web page locally by running the following command and visiting [http://localhost:8000](http://localhost:8000).
 
 ```sh
-uvx reloadserver
+uv tool run reloadserver
 ```
+
+> Alternatively, run `uvx reloadserver` (it does the same thing).
+
+That command will start up a web server that will reload the web page whenever its source files change.
 
 You can terminate the web server by pressing `^C`.
 
-> Note: You can get `uvx` by installing [uv](https://docs.astral.sh/uv/). We opted to document a
-> `uv/uvx`-based procedure here because many NMDC team members already have `uv` installed on their
-> development machines.
+> Note: We opted to document a [uv](https://docs.astral.sh/uv/)-based procedure here because
+> many NMDC team members already have it installed on their development machines.
 
 ### Deployment
 
