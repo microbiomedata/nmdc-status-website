@@ -12,6 +12,21 @@ Write the text in Markdown format in the file `./message.md`, then reload the we
 
 If the `./message.md` file is empty, the web page will show a default message saying all systems are running normally.
 
+### Previewing the web page
+
+You can preview the web page locally by running the following command (which will start up a web
+server that reloads the page whenever the web page's source files change) and visiting [http://localhost:8000](http://localhost:8000).
+
+```sh
+uvx reloadserver
+```
+
+You can terminate the web server by pressing `^C`.
+
+> Note: You can get `uvx` by installing [uv](https://docs.astral.sh/uv/). We opted to document a
+> `uv/uvx`-based procedure here because many NMDC team members already have `uv` installed on their
+> development machines.
+
 ### Deployment
 
 GitHub will automatically deploy the latest commit on the `main` branch, to GitHub Pages.
