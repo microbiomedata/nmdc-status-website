@@ -13,7 +13,7 @@ into HTML, and renders it within the web page. The web page gets deployed to Git
 
 ## Commands
 
-- Preview web page locally: `$ uvx reloadserver` and visit [localhost:8000](http://localhost:8000)
+- Preview web page locally: `$ uvx reloadserver` and visit [http://localhost:8000](http://localhost:8000)
 
 ## Commonly-edited files
 
